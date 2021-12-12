@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://searx.thegreenwebfoundation.org/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="description" content="searx - a privacy-respecting, hackable metasearch engine">
+    <meta name="keywords" content="searx, search, search engine, metasearch, meta search">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="searx/0.16.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1.0, user-scalable=1">
+
+    <title>New Tab</title>
+    <link rel="stylesheet" href="./Dodo Browser_files/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./Dodo Browser_files/logicodev.min.css" type="text/css">
+    <link rel="stylesheet" href="./Dodo Browser_files/leaflet.min.css" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/static/js/html5shiv.min.js"></script>
+      <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="https://searx.thegreenwebfoundation.org/static/themes/oscar/img/favicon.png">
+
+
+    <link title="New Tab" type="application/opensearchdescription+xml" rel="search" href="https://searx.thegreenwebfoundation.org/opensearch.xml">
+    <noscript>
+        <style type="text/css">
+            .tab-content > .active_if_nojs, .active_if_nojs {display: block !important; visibility: visible !important;}
+            .margin_top_if_nojs {margin-top: 20px;}
+            .hide_if_nojs {display: none !important;overflow:none !important;}
+            .disabled_if_nojs {pointer-events: none; cursor: default; text-decoration: line-through;}
+        </style>
+    </noscript>
+</head>
+<body>
+<div class="searx-navbar"><span class="instance pull-left"><a href="https://searx.thegreenwebfoundation.org/">GREEN SEARX</a></span><span class="pull-right"><a href="https://searx.thegreenwebfoundation.org/about">O searx</a><a href="https://searx.thegreenwebfoundation.org/preferences">preferencje</a></span></div>
+    <div class="container">
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="text-center col-sm-12 col-md-12">
+                <h1 class="text-hide center-block" id="main-logo">
+                    <img class="center-block img-responsive" src="./Dodo Browser_files/logo_searx_a.png" alt="searx logo">
+                    searx
+                </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-center col-sm-12 col-md-12">
+
+<form method="POST" action="https://searx.thegreenwebfoundation.org/" id="search_form" role="search">
+    <div class="input-group col-md-8 col-md-offset-2">
+        <input type="search" name="q" class="form-control input-lg autofocus" id="q" placeholder="Wyszukaj..." aria-label="Wyszukaj..." autocomplete="off" value="" accesskey="s">
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-default input-lg" aria-label="Rozpocznij wyszukiwanie"><span class="hide_if_nojs"><span class="glyphicon glyphicon-search"></span></span><span class="hidden active_if_nojs">Rozpocznij wyszukiwanie</span></button>
+        </span>
+    </div>
+    <div class="col-md-8 col-md-offset-2  advanced">
+<input type="checkbox" name="advanced_search" id="check-advanced">
+<label for="check-advanced"><span class="glyphicon glyphicon-cog"></span>Zaawansowane ustawienia</label>
+<div id="advanced-search-container">
+<div id="categories"><input class="hidden" type="checkbox" id="checkbox_general" name="category_general" checked="checked"><label for="checkbox_general">ogólne</label><input class="hidden" type="checkbox" id="checkbox_files" name="category_files"><label for="checkbox_files">pliki</label><input class="hidden" type="checkbox" id="checkbox_images" name="category_images"><label for="checkbox_images">zdjęcia</label><input class="hidden" type="checkbox" id="checkbox_it" name="category_it"><label for="checkbox_it">informatyka</label><input class="hidden" type="checkbox" id="checkbox_map" name="category_map"><label for="checkbox_map">mapa</label><input class="hidden" type="checkbox" id="checkbox_music" name="category_music"><label for="checkbox_music">muzyka</label><input class="hidden" type="checkbox" id="checkbox_news" name="category_news"><label for="checkbox_news">wiadomości</label><input class="hidden" type="checkbox" id="checkbox_science" name="category_science"><label for="checkbox_science">nauka</label><input class="hidden" type="checkbox" id="checkbox_social_media" name="category_social media"><label for="checkbox_social_media">media społecznościowe</label><input class="hidden" type="checkbox" id="checkbox_videos" name="category_videos"><label for="checkbox_videos">wideo</label></div>
+  <div class="row">
+    <div class="col-xs-6"><select name="time_range" id="time-range" class="custom-select form-control" accesskey="t"><option id="time-range-anytime" value="" selected="">W każdej chwili</option><option id="time-range-day" value="day">W ostatnim dniu</option><option id="time-range-week" value="week">W ostatnim tygodniu</option><option id="time-range-month" value="month">W ostatnim miesiącu</option><option id="time-range-year" value="year">W ostatnim roku</option></select></div>
+    <div class="col-xs-6"><select class="language custom-select form-control" id="language" name="language" accesskey="l">
+  <option value="all">Domyślny język</option><option value="ms-MY">Bahasa Melayu - ms-MY</option><option value="ca-ES">Català - ca-ES</option><option value="da-DK">Dansk - da-DK</option><option value="de">Deutsch - de</option><option value="de-AT">Deutsch (Österreich) - de-AT</option><option value="de-CH">Deutsch (Schweiz) - de-CH</option><option value="de-DE">Deutsch (Deutschland) - de-DE</option><option value="et-EE">Eesti - et-EE</option><option value="en">English - en</option><option value="en-AU">English (Australia) - en-AU</option><option value="en-CA">English (Canada) - en-CA</option><option value="en-GB">English (United Kingdom) - en-GB</option><option value="en-IN">English (India) - en-IN</option><option value="en-MY">English (Malaysia) - en-MY</option><option value="en-US" selected="selected">English (United States) - en-US</option><option value="es">Español - es</option><option value="es-AR">Español (Argentina) - es-AR</option><option value="es-ES">Español (España) - es-ES</option><option value="es-MX">Español (México) - es-MX</option><option value="fr">Français - fr</option><option value="fr-BE">Français (Belgique) - fr-BE</option><option value="fr-CA">Français (Canada) - fr-CA</option><option value="fr-CH">Français (Suisse) - fr-CH</option><option value="fr-FR">Français (France) - fr-FR</option><option value="hr-HR">Hrvatski - hr-HR</option><option value="id-ID">Indonesia - id-ID</option><option value="it-IT">Italiano - it-IT</option><option value="lv-LV">Latviešu - lv-LV</option><option value="lt-LT">Lietuvių - lt-LT</option><option value="hu-HU">Magyar - hu-HU</option><option value="nl">Nederlands - nl</option><option value="nl-BE">Nederlands (België) - nl-BE</option><option value="nl-NL">Nederlands (Nederland) - nl-NL</option><option value="nb-NO">Norsk Bokmål - nb-NO</option><option value="pl-PL">Polski - pl-PL</option><option value="pt">Português - pt</option><option value="pt-BR">Português (Brasil) - pt-BR</option><option value="pt-PT">Português (Portugal) - pt-PT</option><option value="ro-RO">Română - ro-RO</option><option value="sk-SK">Slovenčina - sk-SK</option><option value="sl-SI">Slovenščina - sl-SI</option><option value="fi-FI">Suomi - fi-FI</option><option value="sv-SE">Svenska - sv-SE</option><option value="vi-VN">Tiếng Việt - vi-VN</option><option value="tr-TR">Türkçe - tr-TR</option><option value="is-IS">Íslenska - is-IS</option><option value="cs-CZ">Čeština - cs-CZ</option><option value="el-GR">Ελληνικά - el-GR</option><option value="bg-BG">Български - bg-BG</option><option value="ru-RU">Русский - ru-RU</option><option value="sr-RS">Српски - sr-RS</option><option value="uk-UA">Українська - uk-UA</option><option value="he-IL">עברית - he-IL</option><option value="ar-SA">العربية - ar-SA</option><option value="fa-IR">فارسی - fa-IR</option><option value="th-TH">ไทย - th-TH</option><option value="zh">中文 - zh</option><option value="zh-CN">中文 (中国) - zh-CN</option><option value="zh-TW">中文 (台灣) - zh-TW</option><option value="ja-JP">日本語 - ja-JP</option><option value="ko-KR">한국어 - ko-KR</option></select></div>
+  </div>
+</div>    </div>
+
+</form><!-- / #search_form_full -->        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p class="text-muted">
+                <small>
+                    Obsługiwane przez <a href="https://asciimoo.github.io/searx/">searx</a> - 0.16.0 - szanująca prywatność, hackowalna wyszukiwarka metasearch<br>
+                    <a href="https://github.com/asciimoo/searx">Source code</a> |
+                    <a href="https://github.com/asciimoo/searx/issues">Issue tracker</a> |
+                    <a href="https://github.com/asciimoo/searx/wiki/Searx-instances">Public instances</a>
+                </small>
+            </p>
+        </div>
+    </div>
+    <script src="./Dodo Browser_files/jquery-1.11.1.min.js.pobrane"></script>
+    <script src="./Dodo Browser_files/bootstrap.min.js.pobrane"></script>
+
+    <script src="./Dodo Browser_files/require-2.1.15.min.js.pobrane"></script>
+    <script src="./Dodo Browser_files/searx.min.js.pobrane" data-method="POST" data-autocompleter="false"></script>
+    <script src="./Dodo Browser_files/search_on_category_select.js.pobrane"></script>
+    <noscript>
+      <style>
+        .glyphicon { display: none; }
+      </style>
+    </noscript>
+
+</body></html>
